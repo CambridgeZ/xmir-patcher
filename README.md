@@ -16,8 +16,46 @@ Firmware patcher for Xiaomi routers
 ### Linux / Mac OS
 
 * Install python 3.8+ and openssl
-* Run `run.sh`
+* Run `./run.sh`
 
 ## Donations
 
 [![Donations Page](https://github.com/andry81-cache/gh-content-static-cache/raw/master/common/badges/donate/donate.svg)](https://github.com/remittor/donate)
+## how to use this to connect ssh
+After `run.sh` you will see the following
+```bash
+==========================================================
+
+Xiaomi MiR Patcher  
+
+
+ 1 - Set IP-address (current value: 192.168.31.1)
+ 2 - Connect to device (install exploit)
+ 3 - Read full device info
+ 4 - Create full backup
+ 5 - Install EN/RU languages
+ 6 - Install permanent SSH
+ 7 - Install firmware (from directory "firmware")
+ 8 - {{{ Other functions }}}
+ 9 - [[ Reboot device ]]
+ 0 - Exit
+
+Select: 
+```
+
+Then enter `2` and open another terminal. In the new terminal enter
+```bash
+ssh root@192.168.31.1
+```
+If the following error occurs 
+```bash
+Unable to negotiate with 192.168.31.1 port 22: no matching host key type found. Their offer: ssh-rsa
+```
+
+Try to enter 
+```bash
+mac$ ssh -o HostKeyAlgorithms=+ssh-rsa root@192.168.31.1
+```
+
+Last but not least, the default password for Xiaomi Router is Usually `root`.
+
