@@ -54,7 +54,7 @@ Unable to negotiate with 192.168.31.1 port 22: no matching host key type found. 
 
 Try to enter 
 ```bash
-mac$ ssh -o HostKeyAlgorithms=+ssh-rsa root@192.168.31.1
+ssh -o HostKeyAlgorithms=+ssh-rsa root@192.168.31.1
 ```
 
 Last but not least, the default password for Xiaomi Router is Usually `root`.
