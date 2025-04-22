@@ -59,3 +59,5 @@ mac$ ssh -o HostKeyAlgorithms=+ssh-rsa root@192.168.31.1
 
 Last but not least, the default password for Xiaomi Router is Usually `root`.
 
+In case `root` is not the proper password, maybe ![this website](https://miwifi.dev/ssh) can be helpful to you. You can find the SN number for your router in ![the set page for router](http://192.168.31.1/)
+
